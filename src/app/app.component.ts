@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from "./components/template/header/header.component";
+import { FooterComponent } from './components/template/footer/footer.component';
 
 @Component({
     selector: 'app-root',
@@ -10,7 +11,8 @@ import { HeaderComponent } from "./components/template/header/header.component";
     imports: [
         RouterOutlet,
         MatToolbarModule,
-        HeaderComponent
+        HeaderComponent,
+        FooterComponent
     ]
 })
 export class AppComponent {
