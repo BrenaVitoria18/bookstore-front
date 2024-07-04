@@ -4,6 +4,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from "./components/template/header/header.component";
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from "./components/template/nav/nav.component";
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
     selector: 'app-root',
@@ -14,7 +15,8 @@ import { NavComponent } from "./components/template/nav/nav.component";
         MatToolbarModule,
         HeaderComponent,
         FooterComponent,
-        NavComponent
+        NavComponent,
+        MatCardModule
     ]
 })
 export class AppComponent {

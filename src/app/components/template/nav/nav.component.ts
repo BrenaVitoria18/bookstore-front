@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -9,10 +10,12 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     MatSidenavModule,
     MatListModule, 
-    MatIconModule
+    MatIconModule,
+    RouterModule
   ],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrl: './nav.component.css',
+
 })
 export class NavComponent {
 
