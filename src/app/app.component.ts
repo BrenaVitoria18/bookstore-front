@@ -6,6 +6,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from "./components/template/nav/nav.component";
 import {MatCardModule} from '@angular/material/card';
 
+
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -16,8 +17,10 @@ import {MatCardModule} from '@angular/material/card';
         HeaderComponent,
         FooterComponent,
         NavComponent,
-        MatCardModule
-    ]
+        MatCardModule,
+             
+    ],
+   
 })
 export class AppComponent {
   title = 'bookstore-front';
