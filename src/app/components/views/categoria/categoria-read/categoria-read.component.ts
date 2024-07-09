@@ -2,19 +2,21 @@ import { Component } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import { CategoriaService } from '../../categoria.service';
 import { Categoria } from './categoria.model';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-categoria-read',
   standalone: true,
   imports: [
-    MatTableModule
+    MatTableModule,
+    MatButtonModule
   ],
   templateUrl: './categoria-read.component.html',
   styleUrl: './categoria-read.component.css'
 })
 export class CategoriaReadComponent {
   categorias: Categoria[] = [];
-  displayedColumns: string[] = ['id', 'nome', 'descricao', 'acoes'];
+  displayedColumns: string[] = ['id', 'nome', 'descricao', 'livros', 'acoes'];
   constructor(private service: CategoriaService){}
 
   findAll(){
