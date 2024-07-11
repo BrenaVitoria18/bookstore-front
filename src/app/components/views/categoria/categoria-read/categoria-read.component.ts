@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [
     MatTableModule,
-    MatButtonModule
+    MatButtonModule  
   ],
   templateUrl: './categoria-read.component.html',
   styleUrl: './categoria-read.component.css'
