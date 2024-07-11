@@ -42,4 +42,8 @@ export class CategoriaCreateComponent {
     
   }
 
+  cancela(): void{
+    this.router.navigate(['categorias'])
+  }
+
 }
